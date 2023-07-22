@@ -1,0 +1,4 @@
+
+<textarea autofocus class="prompt" placeholder="prompt comes here" type="text" #prompt (keyup.enter)="[send(prompt.value, clipboard.checked), prompt.value='']"></textarea>
+<input #clipboard type="checkbox" class="clipBoardCheck">
+<textarea *ngIf="response" class="response" readonly>{{ response }}</textarea>
